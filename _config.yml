@@ -1,9 +1,9 @@
 # Site settings
 title: Loki
-email: sunxiaobiu@gmail.com
+email: lokiworks@gmail.com
 description: Source of me.
 localurl: "" # the subpath of your site, e.g. /blog/
-url: http://sunxiaobiu.github.io # the base hostname & protocol for your site
+url: http://lokiworks.github.io # the base hostname & protocol for your site
 me-img: "/img/HeadPicture.png"
 
 twitter_username:
