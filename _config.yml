@@ -1,30 +1,38 @@
 # Site settings
-title: standing on the shoulders of giants
-email: Lokiworks.yen@gmail.com
-description: 思绪来得快去得也快，偶尔会在这里停留
+title: sunxiaobiu技术不宅
+email: sunxiaobiu@gmail.com
+description: Source of me.
 localurl: "" # the subpath of your site, e.g. /blog/
-url: http://Lokiworks.github.io # the base hostname & protocol for your site
+url: http://sunxiaobiu.github.io # the base hostname & protocol for your site
 me-img: "/img/HeadPicture.png"
 
 twitter_username:
-github_username: Lokiworks
+github_username: sunxiaobiu
 
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+highlighter: pygments
 
-assets: http://lokiworks.github.io/assets
-baseurl: http://lokiworks.github.io
+assets: http://sunxiaobiu.github.io/assets
+baseurl: http://sunxiaobiu.github.io
 
 # pagination
 paginate: 10
 
 # Markdown Processors
-kramdown:
- input: GFM
-
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - hard_wrap
+    - no_intra_emphasis
+    - autolink
+    - strikethrough
+    - tables
+    - lax_spacing
+    - with_toc_data
 
 tagline: A technology blog for myself.
 
@@ -73,8 +81,8 @@ mathjax: false      #enable mathjax if true
 
 #### Author information
 author:
-  name: Loki      ## e.g. wuchong Author name
-  intro_line1:  "Hello ,I'm Loki in Nanjing."    ## your introduction on the bottom of the page
+  name: sunxiaobiu      ## e.g. wuchong Author name
+  intro_line1:  "Hello ,I'm Sunxiaoyu in Shanghai."    ## your introduction on the bottom of the page
   intro_line2:  "Too simple, sometimes naive."  ## the 2nd line
   weibo: 5729765191     ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier: 9d4bc461 ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
@@ -151,4 +159,5 @@ tinysou_search:     ## http://tinysou.com/
   enable: false
   id:  ## e.g. "4ac092ad8d749fdc6293" for your tiny search id
 
-gems: [jekyll-paginate]
+gems:
+ - jemoji
