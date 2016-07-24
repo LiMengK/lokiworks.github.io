@@ -19,7 +19,71 @@ excerpt: 插入排序:这是一个对少量元素进行排序的有效算法
 ![cmd-markdown-logo](http://lokiworks.github.io/img/20160724_InsertSort.JPG)
 
 ### 3.伪代码:
+```
+// for j = 2 to A.length
+// 		key = A[j]
+// 		// Insert A[j] into the sorted sequence A[1..j-1]
+// 		i = j - 1
+// 		while i > 0 and A[i] > key
+// 		A[i+1] = A[i]
+// 		i = i - 1
+// 		A[i+1] = key
+//
+// 		example 
+// 		input: (5, 2, 4, 6, 1, 3)
+//		output:(1, 2, 3, 4, 5, 6)
+``` 
 ### 4.代码片段:
+```
+#include <stdio.h>
+#include <assert.h>
+
+#define COUNT_OF(x) (sizeof(x) / sizeof(0[x])) / ((size_t)(!(sizeof(x) % sizeof(0[x]))))
+ 
+
+int*  insert_sort(int* arr, int length)
+{
+	assert(arr != NULL);
+	assert(length > 0);
+	
+	for (int j = 1; j != length; ++j)
+	{
+		int key = arr[j];
+		int i = j - 1;
+		while(i >= 0 && arr[i] > key)
+		{
+			arr[i+1] = arr[i];
+			i = i - 1;
+		}
+		arr[i + 1] = key;
+		
+	}	
+
+	return arr;
+}
+
+// test code.
+int main()
+{
+	int input_arr[] = {5, 2, 4, 6, 1, 3};
+	int length = COUNT_OF(input_arr);
+	int* output_arr = insert_sort(input_arr, length);
+	
+	// input info.
+	printf("input array is {5,2,4,6,1,3} .\n");	
+
+	// output result.
+	printf("output array is {");
+	for(int i = 0; i != length-1; ++i)
+	{
+		printf("%d,", output_arr[i]);
+	}
+	printf("%d", output_arr[length-1]);
+	printf("} .\n");
+
+	return 0;
+}
+```
 
 
 插入排序的最坏情况时间代价为(n^2),当输入规模较大时，不宜采用。
