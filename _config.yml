@@ -130,7 +130,7 @@ google_analytics:
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 baidu_tongji:
   enable: true
-  sitecode: 7578feb1a00553f099171e7b2560ae78 ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+  sitecode: 68fd1a372fa3b9174a11d0bc897c619f ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
 cnzz_tongji:
   enable: false
   siteid:    ## e.g. 1253575964 your cnzz tongji site id
@@ -143,7 +143,7 @@ totop: true           ## if you want to scroll to top in every post set the valu
 #### Custom Search
 google_cse:
   enable: true
-  cx: 002270726174808560530:daiye9ndzfk  ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
+  cx: 014552329430010132219:rwkqlzl6go4  ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
 ## https://www.google.com/cse/
 ## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
 ## set the 'front-matter' as
