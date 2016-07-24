@@ -1,6 +1,6 @@
 # Site settings
 title: Loki技术不宅
-email: lokiworks@gmail.com
+email: lokiworks.yen@gmail.com
 description: Source of me.
 localurl: "" # the subpath of your site, e.g. /blog/
 url: http://lokiworks.github.io # the base hostname & protocol for your site
@@ -88,14 +88,14 @@ author:
   weibo_verifier: 9d4bc461 ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   tsina: 9d4bc461     ## e.g. 2176287895  Your weibo ID,It will be used in share button.
   douban: 74961542    ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
-  zhihu: lokiworks     ## e.g. jark  for http://www.zhihu.com/people/jark
+  zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
   email: lokiworks.yen@gmail.com     ## e.g. imjark@gmail.com
   twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
   github: lokiworks    ## e.g. wuchong for https://github.com/wuchong
-  facebook:  ## e.g. imjark for https://facebook.com/imjark
+  facebook: lokiworks  ## e.g. imjark for https://facebook.com/imjark
   linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
   google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
-  stackoverflow: 5633124 ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
+  stackoverflow: lokiworks ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
 ## if you set them, the corresponding  share button will show on the footer
 
 #### Toc
@@ -107,7 +107,7 @@ toc:
 
 #### Links
 links:
-  cloudwu's Blog: http://blog.codingnow.com/
+  cloudwu's Blog: http://codingnow.com
 
 excerpt_separator: <!--more-->
 
@@ -119,7 +119,7 @@ disqus_shortname: lokiworks    ## e.g. wuchong   your disqus short name.
 jiathis:
   enable: false ## if you use jiathis as your share tool,the built-in share tool won't be display.
   id: 2084062   ## e.g. 1889330 your jiathis ID.
-  tsina: 5729765191 ## e.g. 2176287895 Your weibo id,It will be used in share button.
+  tsina: lokiworks ## e.g. 2176287895 Your weibo id,It will be used in share button.
 
 #### Analytics
 google_analytics:
