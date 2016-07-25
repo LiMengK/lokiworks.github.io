@@ -140,6 +140,7 @@ fancybox: true        ## if you use gallery post or want use fancybox please set
 totop: true           ## if you want to scroll to top in every post set the value to true
 
 
+
 #### Custom Search
 google_cse:
   enable: true
