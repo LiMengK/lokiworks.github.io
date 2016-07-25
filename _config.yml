@@ -96,7 +96,7 @@ JB :
   comments :
     provider : duoshuo
     duoshuo :
-      short_name : soe
+      short_name : avatar
     disqus :
       short_name : lokiworks
     livefyre :
