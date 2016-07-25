@@ -130,7 +130,7 @@ google_analytics:
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 baidu_tongji:
   enable: true
-  sitecode: 68fd1a372fa3b9174a11d0bc897c619f ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+  sitecode: ac3669e5db48021a04dd14505d884118 ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
 cnzz_tongji:
   enable: false
   siteid:    ## e.g. 1253575964 your cnzz tongji site id
