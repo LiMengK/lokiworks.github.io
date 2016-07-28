@@ -1,6 +1,5 @@
 ---
 published: false
 ---
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+## 算法设计-前言
+之前因为各种原因，一直没有学习算法，这段时间打算学习算法。网上找了本****CLRS****(算法导论第三版)英文版，准备系统的学习算法。打算将书中的算法记录下来，并将其实现出来。书的内容很丰富，同时也很艰深，算法分析部分需要深厚的数学功底，目前阶段我只关注****算法的设计****。
