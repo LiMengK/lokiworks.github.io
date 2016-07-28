@@ -8,6 +8,7 @@ description: 学习归并排序算法的设计
 category: 算法设计
 tags:
   - CLRS
+  - 排序
 published: true
 ---
 {% include JB/setup %}
@@ -19,6 +20,8 @@ published: true
 * **分解**:将原问题分解成一系列子问题
 * **解决**:递归地解决子问题。若子问题足够小，则直接求解
 * **合并**:将子问题的结果合并成原问题的解
+
+
 ### 2.图示:
 ![cmd-markdown-logo]({{ IMAGE_PATH }}/20160729_MergeSort.JPG)
 
