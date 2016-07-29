@@ -116,13 +116,13 @@ JB :
   analytics :
     provider : baidu
     baidu :
-      tracking_id : 
+      tracking_id : 'ffc3e637927923a53531f51d9afc4cc2'
     google : 
-      tracking_id : 
+      tracking_id : 'UA-81634811-1'
     getclicky :
       site_id : 
     mixpanel :
-      token : 
+      token : '_MIXPANEL_TOKEN_'
 
   # Settings for sharing helper. 
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.
