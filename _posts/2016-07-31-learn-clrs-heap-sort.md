@@ -23,6 +23,6 @@ published: true
 将数组对象视为一颗完全二叉树。树中的每个结点与数组中的元素对应。对数组元素的排序就是调整树中结点的位置，任意时刻树的根结点的值都是当前堆的最大值。每迭代一次将当前根节点的值按照从后往前的顺序依次放入数值元素中。
 
 ### 2.图示:
-![cmd-markdown-logo]({{ IMAGE_PATH }}/20160729_MergeSort.JPG)
+![cmd-markdown-logo]({{ IMAGE_PATH }}/20160731_HeapSort.PNG)
 
 ### 3.伪代码:
