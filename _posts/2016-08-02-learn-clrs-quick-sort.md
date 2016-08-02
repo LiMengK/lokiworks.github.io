@@ -54,43 +54,42 @@ using namespace std;
 int Partition(int* arr, int p, int r) {
 	int x = arr[r];
 	int i = p - 1;
-	for (int j = p; j <= r-1; ++j) {
+	for (int j = p; j <= r - 1; ++j) {
 		if (arr[j] <= x) {
 			++i;
 			std::swap(arr[i], arr[j]);
 		}
 
 	}
-	std::swap(arr[i+1], arr[r]);
-	return i+1;
+	std::swap(arr[i + 1], arr[r]);
+	return i + 1;
 }
 
 void QuickSort(int* arr, int p, int r) {
 	if (p < r) {
-int q = Partition(arr, p, r);
-QuickSort(arr, p, q-1);
-QuickSort(arr, q+1, r);
+		int q = Partition(arr, p, r);
+		QuickSort(arr, p, q - 1);
+		QuickSort(arr, q + 1, r);
 	}
 }
 
-void PrintArray(int* arr, int size)
-{
-	for(int i = 0; i != size-1; ++i){
+void PrintArray(int* arr, int size) {
+	for (int i = 0; i != size - 1; ++i) {
 		cout << arr[i] << ", ";
 	}
-	cout << arr[size-1] << endl;
+	cout << arr[size - 1] << endl;
 }
 
 // test code.
 int main() {
-int arr[] = {2, 8, 7, 1, 3, 5, 6, 4};
-int size = sizeof(arr)/sizeof(arr[0]);
+	int arr[] = { 2, 8, 7, 1, 3, 5, 6, 4 };
+	int size = sizeof(arr) / sizeof(arr[0]);
 
-cout << "sort array before is: " << endl;
-PrintArray(arr, size);
-QuickSort(arr, 0, size-1);
-cout << "sort array after is: " << endl;
-PrintArray(arr, size);
+	cout << "sort array before is: " << endl;
+	PrintArray(arr, size);
+	QuickSort(arr, 0, size - 1);
+	cout << "sort array after is: " << endl;
+	PrintArray(arr, size);
 	return 0;
 }
 ```
