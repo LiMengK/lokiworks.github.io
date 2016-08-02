@@ -1,7 +1,18 @@
 ---
-published: false
+layout: post
+title: 算法设计-排序算法之快速排序
+keywords:
+  - 快速排序
+  - 排序
+description: 学习快速排序算法的设计
+category: 算法设计
+tags:
+  - CLRS
+  - 排序
+published: true
 ---
-## A New Post
+{% include JB/setup %}
+
 
 快速排序:这是一个对大量元素进行排序的有效算法。
 
@@ -84,4 +95,4 @@ PrintArray(arr, size);
 }
 ```
 
-插入排序的平均性能相当好，期望运行时间为```nlgn``` ,当输入规模较大时，适宜采用。
+快速排序的平均性能相当好，期望运行时间为```nlgn``` ,当输入规模较大时，适宜采用。
