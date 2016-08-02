@@ -20,26 +20,68 @@ published: false
 //		QUICKSORT(A, p, q-1)
 //		QUICKSORT(A, q+1, r)
 //
-// 	  merge(A, p, q, r)
-// 	  	n1 = p-q+1
-// 	  	n2 = r-q
-// 	  	let L[1..n1+1] and R[1..n2+1] be new arrays
-// 	  	for i = 1 to n1
-// 	  		L[i] = A[p+i-1]
-// 	  	for j = 1 to n2
-// 	  		R[j] = A[q+j]
-// 	  	L[n1+1] = ~
-// 	  	R[n2+1] = ~
-// 	  	i = 1
-// 	  	j = 1
-// 	  	for k = p to r
-// 	  	if L[i] <= R[j]
-// 	  		A[k] = L[i]
-// 	  		i = i + 1
-// 	  	else
-// 	  		A[k] = R[j]
-// 	  		j = j + 1
+//    PARTITION(a, p, r)
+//      x = A[r]
+//		i = p-1
+//    for(j=p to r-1)
+//		if A[j] <= x
+//			i = i+1
+//			exchange A[i] with A[j]
+//	  exchange A[i+1] with A[r]
+//	  return i+1
+//
 //	  example
 //		input: (5, 2, 4, 6, 1, 3)
 //		output:(1, 2, 3, 4, 5, 6)
 ``` 
+
+### 4.代码片段:
+```
+#include <iostream>
+using namespace std;
+
+int Partition(int* arr, int p, int r) {
+	int x = arr[r];
+	int i = p - 1;
+	for (int j = p; j <= r-1; ++j) {
+		if (arr[j] <= x) {
+			++i;
+			std::swap(arr[i], arr[j]);
+		}
+
+	}
+	std::swap(arr[i+1], arr[r]);
+	return i+1;
+}
+
+void QuickSort(int* arr, int p, int r) {
+	if (p < r) {
+int q = Partition(arr, p, r);
+QuickSort(arr, p, q-1);
+QuickSort(arr, q+1, r);
+	}
+}
+
+void PrintArray(int* arr, int size)
+{
+	for(int i = 0; i != size-1; ++i){
+		cout << arr[i] << ", ";
+	}
+	cout << arr[size-1] << endl;
+}
+
+// test code.
+int main() {
+int arr[] = {2, 8, 7, 1, 3, 5, 6, 4};
+int size = sizeof(arr)/sizeof(arr[0]);
+
+cout << "sort array before is: " << endl;
+PrintArray(arr, size);
+QuickSort(arr, 0, size-1);
+cout << "sort array after is: " << endl;
+PrintArray(arr, size);
+	return 0;
+}
+```
+
+插入排序的平均性能相当好，期望运行时间为```nlgn``` ,当输入规模较大时，适宜采用。
