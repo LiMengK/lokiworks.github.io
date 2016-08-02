@@ -14,12 +14,11 @@ published: false
 
 ### 3.伪代码:
 ```
-// 	  merge-sort(A, p, r)
+// 	  QUICKSORT(A, p, r)
 // 	  if p < r
-// 	  	q = [(p+r)/2]
-// 	  	merge-sort(A, p, q)
-// 	  	merge-sort(A, q+1, r)
-// 	  	merge(A, p, q, r)
+// 	  	q = PARTITION(a, p, r)
+//		QUICKSORT(A, p, q-1)
+//		QUICKSORT(A, q+1, r)
 //
 // 	  merge(A, p, q, r)
 // 	  	n1 = p-q+1
