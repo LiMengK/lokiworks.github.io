@@ -3,7 +3,6 @@ layout: post
 title: 算法设计-排序算法之归并排序
 keywords:
   - 归并
-  - 排序
 description: 学习归并排序算法的设计
 category: 算法设计
 tags:
