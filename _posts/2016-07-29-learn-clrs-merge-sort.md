@@ -8,7 +8,6 @@ description: 学习归并排序算法的设计
 category: 算法设计
 tags:
   - CLRS
-  - 排序
 published: true
 ---
 {% include JB/setup %}
