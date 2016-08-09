@@ -20,6 +20,6 @@ gdb --args executablename arg1 arg2 arg3
 ```
 * 进入到函数体
 ```
-gdb s
+s
 ```
 
