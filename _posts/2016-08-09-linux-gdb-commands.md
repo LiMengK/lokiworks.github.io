@@ -18,6 +18,11 @@ published: true
 ```
 gdb --args executablename arg1 arg2 arg3
 ```
+或者
+```
+set args arg1 arg2 arg3
+```
+
 * 进入到函数体
 ```
 s
