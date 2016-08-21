@@ -17,7 +17,7 @@ published: true
 
 <!--more-->
 ### 1.原理:
-实现的是一种先进先出(**LIFO**)的策略
+实现的是一种后进先出(**LIFO**)的策略
 
 ### 2.图示:
 ![cmd-markdown-logo]({{ IMAGE_PATH }}/20160821_StackDataStructures.PNG)
