@@ -25,7 +25,6 @@ published: true
 ### 3.伪代码:
 ```
 //Open addressing
-//@{{
 HASH-INSERT(T, k)
 i = 0
 repeat
@@ -47,8 +46,6 @@ repeat
 	i = i + 1
 until T[j] == NIL or i == m
 return NIL
-
-//@}}
 
 
 ``` 
