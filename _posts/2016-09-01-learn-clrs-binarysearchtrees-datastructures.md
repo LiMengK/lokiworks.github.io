@@ -20,7 +20,9 @@ published: true
 二叉树某一结点中的元素总是大于等于其左子树中任一结点中的元素，总是小于等于其右子树中任一结点中的元素。
 
 ### 2.图示:
-![cmd-markdown-logo]({{ IMAGE_PATH }}/20160901_BinarySearchTreeDataStructures.PNG)
+![cmd-markdown-logo]({{ IMAGE_PATH }}/20160901_BinarySearchTreeDataStructures01.PNG)
+![cmd-markdown-logo]({{ IMAGE_PATH }}/20160901_BinarySearchTreeDataStructures02.PNG)
+![cmd-markdown-logo]({{ IMAGE_PATH }}/20160901_BinarySearchTreeDataStructures03.PNG)
 ### 3.伪代码:
 ```
 INORDER-TREE-WALK(x)
