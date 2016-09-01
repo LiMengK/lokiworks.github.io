@@ -52,6 +52,7 @@ return NIL
 
 ### 4.代码片段:
 * 链表法
+
 ```
 // LinkedList.h
 #include <iostream>
@@ -380,6 +381,7 @@ int main(void) {
 ```
 
 * 开放寻址法
+
 ```
 #include <iostream>
 #include <string>
@@ -470,6 +472,7 @@ int main() {
 ```
 
 ### 5.构建**Makefile**
+
 ```
 
 INC_DIR = ./include
