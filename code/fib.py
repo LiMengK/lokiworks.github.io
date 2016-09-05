@@ -1,5 +1,6 @@
 # https://github.com/beniz/fiboheap/blob/master/fiboheap.h
 import  math
+import  sys
 class fibnode:
     def __init__(self, k, p):
         self.mark = False
@@ -98,13 +99,53 @@ class fibheap:
                     self.min = A[i].left = A[i].right = A[i]
                 else:
                     min.left.right = A[i]
-                    A[i].left = self.min
+                    A[i].left = self.min.lef
+                    self.min.lef = A[i]
+                    A[i].right = self.min
+
+                    if(A[i].key < self.min.key):
+                        self.min = A[i]
+
+    def cut(self, x, y):
+        if x.right == x:
+            y.child = None
+        else:
+            x.right.left = x.left
+            x.left.right = x.right
+            if y.child == x:
+                y.child = x.child
+        y.degree = y.degree - 1
+
+        self.min.right.left = x
+        x.right = self.min.right
+        self.min.right = x
+        x.left = self.min
+        x.p = None
+        x.mark = False
+
+    def cascadingCut(self, y):
+        z = y.p
+        if z:
+            if y.mark == False:
+                y.mark = True
+            else:
+                self.cut(y, z)
+                self.cascadingCut(z)
 
 
-
-
-
-
+    def decreaseKey(self, x, k):
+        if k > x.key:
+            return
+        x.key = k
+        y = x.p
+        if y and x.key < y.key:
+            self.cut(x,y)
+            self.cascadingCut(y)
+        if x.key < self.min.key:
+            min = x
+    def removenode(self, x):
+        self.decreaseKey(x, -sys.maxint-1)
+        fn = self.extractMin()
 
     def extractMin(self):
         z = self.min
@@ -125,6 +166,9 @@ class fibheap:
                 self.min = None
             else:
                 self.min = z.right
+                self.consolidate()
+            self.n = self.n -1
+        return  z
 
 
 
