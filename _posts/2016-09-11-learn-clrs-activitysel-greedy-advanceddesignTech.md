@@ -2,10 +2,9 @@
 layout: post
 title: 算法设计-贪心算法之活动选择
 keywords:
-  - 数据结构
   - 贪心算法
 
-description: 学习数据结构贪心算法的设计
+description: 学习贪心算法的设计
 category: 算法设计
 tags:
   - CLRS

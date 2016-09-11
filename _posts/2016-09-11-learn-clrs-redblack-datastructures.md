@@ -5,7 +5,7 @@ keywords:
   - 数据结构
   - 红黑树
 
-description: 学习数据结构红黑树算法的设计
+description: 学习红黑树算法的设计
 category: 算法设计
 tags:
   - CLRS

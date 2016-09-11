@@ -2,10 +2,9 @@
 layout: post
 title: 算法设计-动态规划之最优二叉搜索树
 keywords:
-  - 数据结构
   - 动态规划
 
-description: 学习数据结构动态规划算法的设计
+description: 学习动态规划算法的设计
 category: 算法设计
 tags:
   - CLRS
