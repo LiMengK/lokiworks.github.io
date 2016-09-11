@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 算法设计-最优二叉搜索树
+title: 算法设计-动态规划之最优二叉搜索树
 keywords:
   - 数据结构
   - 动态规划

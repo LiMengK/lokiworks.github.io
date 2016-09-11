@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 算法设计-最长公共子序列
+title: 算法设计-动态规划之最长公共子序列
 keywords:
   - 数据结构
   - 动态规划
