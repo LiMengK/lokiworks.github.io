@@ -1,10 +1,12 @@
 <a href="#"><i class="icon-fixed-width icon-link"></i> 友情链接</a>
 <ul>
-  <li><a href="http://blog.codingnow.com/" target="_blank">云风的BLOG</a></li>
-  <li><a href="http://www.liaoxuefeng.com/" target="_blank">廖雪峰的BLOG</a></li>
+  <li><a href="http://blog.codingnow.com/" target="_blank">云风博客</a></li>
+  <li><a href="http://www.liaoxuefeng.com/" target="_blank">廖雪峰博客</a></li>
   <li><a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" target="_blank">visual algorithm</a></li>
   <li><a href="http://vsalm-hols-demo.readthedocs.io/zh_CN/latest/index.html" target="_blank">VSALM动手实验</a></li>
   <li><a href="https://www.codecademy.com" target="_blank">codecademy</a></li>
   <li><a href="https://www.coursera.org/" target="_blank">coursera</a></li>
   <li><a href="http://rosettacode.org/" target="_blank">rosettacode</a></li>
+  <li><a href="http://www.mycodeschool.com/" target="_blank">mycodeschool</a></li>
 </ul>
+
