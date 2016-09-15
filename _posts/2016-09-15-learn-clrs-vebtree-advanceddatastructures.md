@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 算法设计-proto van Emde Boas 树
+title: 算法设计-van Emde Boas 树
 keywords:
-  - proto van Emde Boas 树
+  - van Emde Boas 树
 
-description: 学习proto van Emde Boas 树算法的设计
+description: 学习van Emde Boas 树算法的设计
 category: 算法设计
 tags:
   - CLRS
