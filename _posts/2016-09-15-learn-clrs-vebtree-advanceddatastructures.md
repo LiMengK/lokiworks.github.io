@@ -23,7 +23,7 @@ published: true
 
 ### 3.伪代码:
 * veb-member
-![cmd-markdown-logo]({{ IMAGE_PATH }}/20160915_protovebtree_insert_pcode.PNG)
+![cmd-markdown-logo]({{ IMAGE_PATH }}/20160915_protovebtree_select_pcode.PNG)
 
 * veb-minimum
 ![cmd-markdown-logo]({{ IMAGE_PATH }}/20160915_protovebtree_min_pcode.PNG)
