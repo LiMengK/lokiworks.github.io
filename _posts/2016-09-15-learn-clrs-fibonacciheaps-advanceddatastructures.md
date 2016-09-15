@@ -27,7 +27,7 @@ published: true
 
 ### 3.伪代码:
 * Insert a node
-![cmd-markdown-logo]({{ IMAGE_PATH }}/20160915_FibonacciHeap_insertnode_pcode.PNG)
+![cmd-markdown-logo]({{ IMAGE_PATH }}/20160915_protovebtree_select_pcode.PNG)
 
 * Union heap
 ![cmd-markdown-logo]({{ IMAGE_PATH }}/20160915_FibonacciHeap_unionheap_pcode.PNG)
