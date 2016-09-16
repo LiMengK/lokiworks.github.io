@@ -55,7 +55,7 @@ class bfsNode:
 
 
 
-class bfs:
+class dfs:
     def __init__(self):
         self.v = []
         self.adj = defaultdict(list)
@@ -90,7 +90,7 @@ class bfs:
             print  v.v
 
 if __name__ == '__main__':
-    b = bfs()
+    b = dfs()
     r = bfsNode('r')
     s = bfsNode('s')
     t = bfsNode('t')
