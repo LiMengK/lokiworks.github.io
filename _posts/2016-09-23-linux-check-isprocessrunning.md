@@ -14,6 +14,11 @@ published: true
 # Linux下检测当前只有一进程实例在运行
 ## 基本原理
 Linux下/proc目录记录了当前所有正在运行的进程实例的PID, 使用cmdline查找出当前进程的完整命令,给定的进程名称与查找出的命令进行一一比对，如果找到则认为进程已运行，否则认为该进程尚未启动
+## 命令示例
+```
+[root@rhel5 ~]# more /proc/2674/cmdline 
+/usr/sbin/saslauthd 
+```
 ## 代码示例
 ```
 #include <stdlib.h>
