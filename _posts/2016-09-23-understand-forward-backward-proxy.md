@@ -12,15 +12,15 @@ published: true
 ---
 {% include JB/setup %}
 
-# 理解前向代理与反向代理
+## 理解前向代理与反向代理
 
-## 正向代理
+# 正向代理
 * proxy和client同属一个LAN，对server透明
 
-## 反向代理
+# 反向代理
 * proxy和server同属一个LAN，对client透明。
 
-## 图示
+# 图示
 ![cmd-markdown-logo]({{ IMAGE_PATH }}/正向代理与反向代理.png)
 
 ```
