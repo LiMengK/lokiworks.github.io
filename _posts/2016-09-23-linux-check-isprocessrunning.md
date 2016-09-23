@@ -2,7 +2,7 @@
 layout: post
 title: Linux下检测进程是否已运行
 keywords:
-  - Programming
+  - 单进程实例
 description: 检测当前只有一个进程在运行
 category: Linux
 tags:
