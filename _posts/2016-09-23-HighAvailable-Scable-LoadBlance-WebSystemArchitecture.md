@@ -19,6 +19,7 @@ published: true
 * Nginex(Tengine) 工作在七层网络架构的第7层(应用层 HTTP协议), 高性能的HTTP服务器，提供反向代理及负载均衡
 * ATS 全称为Apache traffic server, 高性能的缓存服务器,提供反向代理及负载均衡
 * Bind9 Linux下的一款DNS服务器(下图中省略),一般会在其配置中配置N个IP,对外提供的接口就是域名
+
 ### 示例图
 ![cmd-markdown-logo]({{ IMAGE_PATH }}/高可用的软件架构.jpg)
 
