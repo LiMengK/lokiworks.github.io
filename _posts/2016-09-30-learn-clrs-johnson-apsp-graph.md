@@ -22,7 +22,7 @@ published: true
 ### 2.图示:
 ![cmd-markdown-logo]({{ IMAGE_PATH }}/20160930_johnson_apsp_graph01.PNG)
 ### 3.伪代码:
-![cmd-markdown-logo]({{ IMAGE_PATH }}/220160930_johnson_apsp_code.PNG)
+![cmd-markdown-logo]({{ IMAGE_PATH }}/20160930_johnson_apsp_code.PNG)
 
 ### 4.代码片段:
 ```
