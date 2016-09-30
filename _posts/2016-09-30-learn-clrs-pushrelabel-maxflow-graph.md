@@ -1,3 +1,26 @@
+---
+layout: post
+title: 算法设计-最大流之push-relabel
+keywords:
+  - push-relabel
+
+description: 学习最大流之push-relabel算法的设计
+category: 算法设计
+tags:
+  - CLRS
+published: true
+---
+{% include JB/setup %}
+
+
+
+<!--more-->
+### 1.伪代码:
+![cmd-markdown-logo]({{ IMAGE_PATH }}/20160930_pushrelabel_maxflow_code01.PNG)
+![cmd-markdown-logo]({{ IMAGE_PATH }}/20160930_pushrelabel_maxflow_code02.PNG)
+![cmd-markdown-logo]({{ IMAGE_PATH }}/20160930_pushrelabel_maxflow_code03.PNG)
+### 2.代码片段:
+```
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -251,3 +274,5 @@ int main()
     return 0;
 }
 
+
+```
