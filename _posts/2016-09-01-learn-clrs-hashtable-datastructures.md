@@ -486,7 +486,7 @@ INCLUDE = -I./include
 
 CC = g++
 #-O2 -g
-CFLAGS = -O0 -g -std=c++0x -fPIC $(INCLUDE)
+CFLAGS = -O0 -g -fPIC $(INCLUDE)
 
 $(TARGET):$(OBJS)
 	$(CC) $(OBJS) -o ../$(TARGET) 
