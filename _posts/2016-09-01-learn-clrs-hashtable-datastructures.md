@@ -474,27 +474,31 @@ int main() {
 ### 5.构建**Makefile**
 
 ```
-
-INC_DIR = ./include
+TARGET=hash
 vpath %.cpp ./src
 
-CXXFLAGS =	-O2 -g -Wall -fmessage-length=0 -I$(INC_DIR)
 
-CXX = g++
+OBJS =	LinkedList.o\
+	Hashtable.o\
+	main.o
 
-OBJS =		HashTable.o LinkedList.o main.o 
+INCLUDE = -I./include
 
-LIBS =
+CC = g++
+#-O2 -g
+CFLAGS = -O0 -g -std=c++0x -fPIC $(INCLUDE)
 
-TARGET =	hashtable
+$(TARGET):$(OBJS)
+	$(CC) $(OBJS) -o ../$(TARGET) 
+%.o:%.cpp
+	$(CC) $(CFLAGS) -c $< -o $@ 
 
-$(TARGET):	$(OBJS)
-	$(CXX) -o $(TARGET) $(OBJS) $(LIBS)
+clean:
+	-rm *.o ../$(TARGET)
 
 all:	$(TARGET)
 
-clean:
-	rm -f $(OBJS) $(TARGET)
+
 
 ```
 
