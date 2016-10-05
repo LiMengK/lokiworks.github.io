@@ -21,10 +21,13 @@ published: true
 * 添加注释
   * #bind-address           = 127.0.0.1
   * #skip-networking
+
 ### 2.重启服务
 * service mysql restart
+
 ### 3.修改表
 * mysql> GRANT ALL PRIVILEGES ON *.* TO 'USERNAME'@'%' IDENTIFIED BY 'PASSWORD' WITH GRANT OPTION;
+
 ### 4.刷新表
 * mysql> FLUSH PRIVILEGES;
 
