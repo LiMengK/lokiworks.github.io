@@ -5,7 +5,7 @@ keywords:
   - Root
 
 description: Ubuntu下启用Root账户
-category: Linux常见操作
+category: Linux
 tags:
   - Linux
 published: true

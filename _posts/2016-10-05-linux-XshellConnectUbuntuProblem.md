@@ -5,7 +5,7 @@ keywords:
   - XShell
 
 description: XShell无法连接ubuntu问题
-category: Linux常见操作
+category: Linux
 tags:
   - Linux
 published: true
