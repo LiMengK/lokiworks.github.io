@@ -1,1 +1,0 @@
-https://www.genuitec.com/products/myeclipse/learning-center/persistence/myeclipse-hibernate-and-spring-tutorial/#readmore
