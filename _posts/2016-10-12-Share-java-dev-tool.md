@@ -35,6 +35,8 @@ published: true
 
 * Code Recommenders
 
+* Class Decompiler
+
 ## Template
 [配置模板文件]({{ IMAGE_PATH }}/stsconf.epf)
 
