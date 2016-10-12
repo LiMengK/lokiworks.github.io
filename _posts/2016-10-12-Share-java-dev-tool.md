@@ -36,7 +36,7 @@ published: true
 * Code Recommenders
 
 ## Template
-![配置模板文件]({{ IMAGE_PATH }}/template/stsconf.epf)
+![配置模板文件]({{ IMAGE_PATH }}/stsconf.epf)
 
 
 
