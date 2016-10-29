@@ -15,9 +15,7 @@ published: true
 
 
 <!--more-->
-# 学习Java中Web开发框架SpringMVC
-
->学习Web开发的缘由，部门内部使用的一款Portal需要整合进公司的云商城里，需要在原来的基础上做一些开发。
+&emsp;&emsp;学习Web开发的缘由，部门内部使用的一款Portal需要整合进公司的云商城里，需要在原来的基础上做一些开发。
 组内暂时没有做Web开发的人，领导安排了我来接手。来着任务及学习Web开发的目的，在网上找一了简易的javaweb
 的项目，这个项目使用了**SpringMVC**+**Mybatis**+**redis**+**mysql**,使用Maven做项目管理。之所以选
 这个项目，是因为该项目与我手上的Portal架构基本吻合。然后就是要跑通这个项目了。对我而言，学习另一门语言
@@ -32,7 +30,8 @@ published: true
 
 ----
 
-**项目地址**:<https://github.com/lokiworks/javaweb/tree/master/project/springmvc/springmvc_Demo01/>
+## 项目地址
+<https://github.com/lokiworks/javaweb/tree/master/project/springmvc/springmvc_Demo01/>
 
 
 
