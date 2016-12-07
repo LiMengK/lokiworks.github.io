@@ -43,6 +43,37 @@ $ tar -zxf nginx-1.11.6.tar.gz
 $ cd nginx-1.11.6
 ```
 
+### 配置Build选项
+使用 ./configure脚本生成Makefile文件
+```
+$ ./configure  --with-ld-opt="-lm -ldl" --sbin-path=/usr/local/nginx/nginx --conf-path=/usr/local/nginx/nginx.conf --pid-path=/usr/local/nginx/nginx.pid --with-pcre=../pcre-8.39 --with-zlib=../zlib-1.2.8 --with-http_ssl_module --with-debug --with-cc-opt='-O0 -g' --with-md5=../openssl-1.0.2f --with-openssl=../openssl-1.0.2f 
+```
+
+### 编译安装
+* 编译
+```
+$ make
+$ sudo make install
+```
+* 安装
+```
+$ sudo nginx
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
