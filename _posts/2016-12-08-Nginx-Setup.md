@@ -26,6 +26,22 @@ $ sudo make install
 ```
 
 * OpenSSL库-为Nginx的SSL模块提供HTTPS协议的支持
+```
+$ wget http://www.openssl.org/source/openssl-1.0.2f.tar.gz
+$ tar -zxf openssl-1.0.2f.tar.gz
+$ cd openssl-1.0.2f
+$ ./configure darwin64-x86_64-cc --prefix=/usr
+$ make
+$ sudo make install
+```
+
+### 下载Nginx源码
+这里使用的是nginx-0.1.13的版本
+```
+$ wget http://nginx.org/download/nginx-0.1.13.tar.gz
+$ tar -zxf nginx-1.11.6.tar.gz
+$ cd nginx-1.11.6
+```
 
 
 
