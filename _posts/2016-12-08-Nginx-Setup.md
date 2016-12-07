@@ -15,7 +15,17 @@ $ make
 $ sudo make install
 ```
 
-* zlib库-为Nginx的Gzip模块提供头压缩
+* zlib库-为Nginx的Gzip模块提供头压缩的支持
+```
+$ wget http://zlib.net/zlib-1.2.8.tar.gz
+$ tar -zxf zlib-1.2.8.tar.gz
+$ cd zlib-1.2.8
+$ ./configure
+$ make
+$ sudo make install
+```
+
+* OpenSSL库-为Nginx的SSL模块提供HTTPS协议的支持
 
 
 
