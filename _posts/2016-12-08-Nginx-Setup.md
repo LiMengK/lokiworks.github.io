@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Linux下安装Nginx
@@ -12,6 +11,7 @@ published: true
 ---
 {% include JB/setup %}
 
+Linux下使用Nginx源码，编译、安装Nginx
 
 ### 安装环境
   系统:ubuntu 16.04
