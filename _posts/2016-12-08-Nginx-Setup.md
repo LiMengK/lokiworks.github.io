@@ -60,6 +60,17 @@ $ sudo make install
 $ sudo nginx
 ```
 
+---
+### 编译安装过程中可能会出现的一些问题
+* 编译
+	* 报IOV_MAX的错误
+    解决:在src/core/ngx_config.h文件中添加如下指令
+    ```
+    	#ifndef IOV_MAX
+		#define IOV_MAX   1024
+		#endif
+    ```
+
 
 
 
