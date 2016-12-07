@@ -11,7 +11,7 @@ published: true
 ---
 {% include JB/setup %}
 
-Linux下使用Nginx源码，编译、安装Nginx
+描述:Linux下使用Nginx源码，编译、安装Nginx
 
 ### 安装环境
   系统:ubuntu 16.04
