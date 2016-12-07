@@ -2,7 +2,7 @@
 published: false
 ---
 ## Linux下安装Nginx
-描述Linux下使用Nginx源码，编译、安装Nginx
+描述Linux下使用Nginx源码，编译、安装Nginx，使用GCC版本为5.4.0 20160609
 
 ### 安装Nginx依赖库
 * PCRE库 -为Nginx的Core和Rewrite模块提供正则支持
@@ -63,12 +63,19 @@ $ sudo nginx
 ---
 ### 编译安装过程中可能会出现的一些问题
 * 编译
-	* 报IOV_MAX的错误
+	1. 报IOV_MAX的错误
+
     解决:在src/core/ngx_config.h文件中添加如下指令
     ```
     	#ifndef IOV_MAX
 		#define IOV_MAX   1024
 		#endif
+    ```
+    2. 报[-Werror=XXX]的错误
+    解决:修改objs下的Makefile文件,修改如下
+    ```
+    CFLAGS =  -pipe   -W -Wall -O0 -g
+
     ```
 
 
