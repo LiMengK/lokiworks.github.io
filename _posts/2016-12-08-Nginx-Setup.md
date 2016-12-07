@@ -1,5 +1,4 @@
----
-published: false
+
 ---
 layout: post
 title: Linux下安装Nginx
