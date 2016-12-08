@@ -63,7 +63,9 @@ $ cd nginx-1.11.6
 使用 ./configure脚本生成Makefile文件
 
 ```
+
 $ ./configure  --with-ld-opt="-lm -ldl" --sbin-path=/usr/local/nginx/nginx --conf-path=/usr/local/nginx/nginx.conf --pid-path=/usr/local/nginx/nginx.pid --with-pcre=../pcre-8.39 --with-zlib=../zlib-1.2.8 --with-http_ssl_module --with-debug --with-cc-opt='-O0 -g' --with-md5=../openssl-1.0.2f --with-openssl=../openssl-1.0.2f 
+
 ```
 
 ### 编译安装
@@ -96,6 +98,7 @@ https://www.nginx.com/resources/admin-guide/installing-nginx-open-source/
 		#define IOV_MAX   1024
 		#endif
     ```
+    
     	2. 报[-Werror=XXX]的错误
     解决:修改objs下的Makefile文件,修改如下
     
@@ -103,6 +106,7 @@ https://www.nginx.com/resources/admin-guide/installing-nginx-open-source/
     CFLAGS =  -pipe   -W -Wall -O0 -g
 
     ```
+    
 * 链接
 	1.报/openssl-1.0.2f/libcrypto.a(dso_dlfcn.o): In function `dlfcn_globallookup':dso_dlfcn.c文件中的相关函数的未定义的引用
     解决:修改objs下的Makefile文件,在$(LINK) -o 处将 -lm -ldl从开头处放到尾部,修改如下
@@ -112,6 +116,7 @@ https://www.nginx.com/resources/admin-guide/installing-nginx-open-source/
 	
 
     ```
+    
 * 安装
 	1.报open() "/usr/local/nginx/conf/mime.types"的错误
     解决:在/usr/local/nginx/创建conf文件夹，并将mime.types拷贝到该文件夹下,命令如下
