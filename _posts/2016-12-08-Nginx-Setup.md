@@ -103,7 +103,7 @@ https://www.nginx.com/resources/admin-guide/installing-nginx-open-source/
 	#endif
         ```
 	
-    	1.  报[-Werror=XXX]的错误
+    	2.  报[-Werror=XXX]的错误
 	
         解决:修改objs下的Makefile文件,修改如下
     
