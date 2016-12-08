@@ -84,7 +84,7 @@ $ ./configure  --with-ld-opt="-lm -ldl" --sbin-path=/usr/local/nginx/nginx --con
 ### 参考
 https://www.nginx.com/resources/admin-guide/installing-nginx-open-source/
 
----
+
 ---
 
 
