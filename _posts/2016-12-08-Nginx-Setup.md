@@ -113,7 +113,7 @@ https://www.nginx.com/resources/admin-guide/installing-nginx-open-source/
     
 #### 链接
 #####  报/openssl-1.0.2f/libcrypto.a(dso_dlfcn.o): In function `dlfcn_globallookup':dso_dlfcn.c文件中的相关函数的未定义的引用
-解决:修改objs下的Makefile文件,在$(LINK) -o 处将 -lm -ldl从开头处放到尾部,修改如下
+解决:修改objs下的Makefile文件,在$(LINK) -o 处将 -lm -ldl从开头处移到尾部,修改如下
 
 ```
 	../pcre-8.39/.libs/libpcre.a ../openssl-1.0.2f/libssl.a ../openssl-1.0.2f/libcrypto.a ../zlib-1.2.8/libz.a -lm -ldl
