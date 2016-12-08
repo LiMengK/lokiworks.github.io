@@ -27,6 +27,7 @@ $ sudo make install
 ```
 
 * zlib库-为Nginx的Gzip模块提供头压缩的支持
+
 ```
 $ wget http://zlib.net/zlib-1.2.8.tar.gz
 $ tar -zxf zlib-1.2.8.tar.gz
@@ -37,6 +38,7 @@ $ sudo make install
 ```
 
 * OpenSSL库-为Nginx的SSL模块提供HTTPS协议的支持
+
 ```
 $ wget http://www.openssl.org/source/openssl-1.0.2f.tar.gz
 $ tar -zxf openssl-1.0.2f.tar.gz
@@ -48,6 +50,7 @@ $ sudo make install
 
 ### 下载Nginx源码
 这里使用的是nginx-0.1.13的版本
+
 ```
 $ wget http://nginx.org/download/nginx-0.1.13.tar.gz
 $ tar -zxf nginx-1.11.6.tar.gz
@@ -56,22 +59,30 @@ $ cd nginx-1.11.6
 
 ### 配置Build选项
 使用 ./configure脚本生成Makefile文件
+
 ```
 $ ./configure  --with-ld-opt="-lm -ldl" --sbin-path=/usr/local/nginx/nginx --conf-path=/usr/local/nginx/nginx.conf --pid-path=/usr/local/nginx/nginx.pid --with-pcre=../pcre-8.39 --with-zlib=../zlib-1.2.8 --with-http_ssl_module --with-debug --with-cc-opt='-O0 -g' --with-md5=../openssl-1.0.2f --with-openssl=../openssl-1.0.2f 
 ```
 
 ### 编译安装
 * 编译
+
 ```
 $ make
 $ sudo make install
 ```
 * 安装
+
 ```
 $ sudo nginx
 ```
 
+### 参考
+https://www.nginx.com/resources/admin-guide/installing-nginx-open-source/
+
 ---
+
+
 ### 编译安装过程中可能会出现的一些问题
 
 * 编译
@@ -82,7 +93,7 @@ $ sudo nginx
 		#define IOV_MAX   1024
 		#endif
     ```
-    2. 报[-Werror=XXX]的错误
+    	2. 报[-Werror=XXX]的错误
     解决:修改objs下的Makefile文件,修改如下
     ```
     CFLAGS =  -pipe   -W -Wall -O0 -g
