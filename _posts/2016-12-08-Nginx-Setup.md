@@ -100,7 +100,9 @@ https://www.nginx.com/resources/admin-guide/installing-nginx-open-source/
 		#endif
     ```
     
+    
     	2. 报[-Werror=XXX]的错误
+	
     解决:修改objs下的Makefile文件,修改如下
     
     ```
@@ -110,7 +112,7 @@ https://www.nginx.com/resources/admin-guide/installing-nginx-open-source/
     
 * 链接
 
-	1.报/openssl-1.0.2f/libcrypto.a(dso_dlfcn.o): In function `dlfcn_globallookup':dso_dlfcn.c文件中的相关函数的未定义的引用
+	1. 报/openssl-1.0.2f/libcrypto.a(dso_dlfcn.o): In function `dlfcn_globallookup':dso_dlfcn.c文件中的相关函数的未定义的引用
     解决:修改objs下的Makefile文件,在$(LINK) -o 处将 -lm -ldl从开头处放到尾部,修改如下
     
     ```
@@ -121,7 +123,7 @@ https://www.nginx.com/resources/admin-guide/installing-nginx-open-source/
     
 * 安装
 
-	1.报open() "/usr/local/nginx/conf/mime.types"的错误
+	1. 报open() "/usr/local/nginx/conf/mime.types"的错误
     解决:在/usr/local/nginx/创建conf文件夹，并将mime.types拷贝到该文件夹下,命令如下
     
     ```
