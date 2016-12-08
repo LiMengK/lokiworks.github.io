@@ -18,6 +18,7 @@ published: true
 ### 安装Nginx依赖库
 * PCRE库 -为Nginx的Core和Rewrite模块提供正则支持
 
+
 ```
 $ wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.39.tar.gz
 $ tar -zxf pcre-8.39.tar.gz
