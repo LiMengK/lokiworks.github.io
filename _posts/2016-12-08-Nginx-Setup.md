@@ -96,10 +96,9 @@ https://www.nginx.com/resources/admin-guide/installing-nginx-open-source/
 解决:在src/core/ngx_config.h文件中添加如下指令
    
 ```
-	
-    	#ifndef IOV_MAX
-	#define IOV_MAX   1024
-	#endif
+#ifndef IOV_MAX
+#define IOV_MAX   1024
+#endif
 ```
 	
 	
