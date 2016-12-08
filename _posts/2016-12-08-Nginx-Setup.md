@@ -93,40 +93,44 @@ https://www.nginx.com/resources/admin-guide/installing-nginx-open-source/
 * 编译
 
 	* 报IOV_MAX的错误
-        解决:在src/core/ngx_config.h文件中添加如下指令
+	
+        	* 解决:在src/core/ngx_config.h文件中添加如下指令
     
-        ```
+        	```
     	        #ifndef IOV_MAX
 		#define IOV_MAX   1024
 		#endif
-        ```
+        	```
 	
     	* 报[-Werror=XXX]的错误
-        解决:修改objs下的Makefile文件,修改如下
+	
+         	* 解决:修改objs下的Makefile文件,修改如下
     
-        ```
+        	```
                CFLAGS =  -pipe   -W -Wall -O0 -g
 
-        ```
+        	```
     
 * 链接
 
 	* 报/openssl-1.0.2f/libcrypto.a(dso_dlfcn.o): In function `dlfcn_globallookup':dso_dlfcn.c文件中的相关函数的未定义的引用
-    	解决:修改objs下的Makefile文件,在$(LINK) -o 处将 -lm -ldl从开头处放到尾部,修改如下
+	
+    		* 解决:修改objs下的Makefile文件,在$(LINK) -o 处将 -lm -ldl从开头处放到尾部,修改如下
     
-    	```
+    		```
 		../pcre-8.39/.libs/libpcre.a ../openssl-1.0.2f/libssl.a ../openssl-1.0.2f/libcrypto.a ../zlib-1.2.8/libz.a -lm -ldl
-    	```
+    		```
     
 * 安装
 
 	* 报open() "/usr/local/nginx/conf/mime.types"的错误
-    	解决:在/usr/local/nginx/创建conf文件夹，并将mime.types拷贝到该文件夹下,命令如下
+	
+    		* 解决:在/usr/local/nginx/创建conf文件夹，并将mime.types拷贝到该文件夹下,命令如下
     
-    	```
+    		```
     		sudo cp mime.types ./conf/
 
-    	```
+    		```
 
 
 
