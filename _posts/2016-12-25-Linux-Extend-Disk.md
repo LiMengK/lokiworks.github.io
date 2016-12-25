@@ -12,13 +12,15 @@ published: true
 ---
 {% include JB/setup %}
 
-### VMware中扩展Linux的硬盘空间
+
 最近使用VMware过程中需要扩展CentOS7的硬盘空间,在此记录下操作过程
 
 ## 操作步骤
 * 1.关闭虚机，使用VMware扩展硬盘容量
 ![cmd-markdown-logo]({{ IMAGE_PATH }}/20161225_Extend-Disk-01.PNG)
+
 * 2.硬盘分区及格式化
+
 ```
 fdisk /dev/sda　
 
@@ -35,15 +37,21 @@ w　　　　　　  写分区表
 q　　　　　　  完成，退出fdisk命令
 
 ```
+
 * 3.添加硬盘分区
+
 ```
 partprobe 
 ```
+
 * 4.格式化分区
+
 ```
 mkfs.ext3 /dev/sda3
 ```
+
 * 5.添加进LVM组
+
 ```
 lvm　　　　　　　　　　　　　　　　　　    进入lvm管理
 lvm>pvcreate /dev/sda3　　　这是初始化刚才的分区，必须的
@@ -53,11 +61,15 @@ lvm>lvextend -l+21513 /dev/mapper/centos-root　　扩展已有卷的容量（21
 lvm>pvdisplay   查看卷容量，这时你会看到一个很大的卷了
 lvm>quit    　退出
 ```
+
 * 6.扩容
+
 ```
 xfs_growfs /dev/mapper/centos-root
 ```
+
 * 7.查看硬盘空间
+
 ```
 df -h
 ```
