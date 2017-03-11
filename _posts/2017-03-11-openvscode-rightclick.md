@@ -4,7 +4,7 @@ title: 右键打开Visual Code
 keywords:
   - VS
 description: 
-category: 右键打开Visual Code
+category: Misc
 tags:
   - Misc
 published: true
