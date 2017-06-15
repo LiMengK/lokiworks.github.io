@@ -35,8 +35,8 @@ DROP TABLE NOTIFICATION_OLD;
 ```
 ## Here are the Advantages to doing DELETEs like this
 
-### NOTIFICATION is emptied fast by means switching in an empty table.
-### NOTIFICATION is immediately available for new INSERTs
-### The remaining 30 days are added back into NOTIFICATION while new INSERTs can take place.
-### Dropping the old version of NOTIFICATION does not interfere with new INSERTs
-### NOTE : I have recommended doing bait-and-switch for table DELETEs before : (See my July 19, 2012 post : Optimizing DELETE Query on MySQL MEMORY Table)
+# NOTIFICATION is emptied fast by means switching in an empty table.
+# NOTIFICATION is immediately available for new INSERTs
+# The remaining 30 days are added back into NOTIFICATION while new INSERTs can take place.
+# Dropping the old version of NOTIFICATION does not interfere with new INSERTs
+# NOTE : I have recommended doing bait-and-switch for table DELETEs before : (See my July 19, 2012 post : Optimizing DELETE Query on MySQL MEMORY Table)
