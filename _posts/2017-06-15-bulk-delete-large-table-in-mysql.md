@@ -42,4 +42,4 @@ DROP TABLE NOTIFICATION_OLD;
 * NOTE : I have recommended doing bait-and-switch for table DELETEs before : (See my July 19, 2012 post : Optimizing DELETE Query on MySQL MEMORY Table)
 
 ## reference
-https://dba.stackexchange.com/questions/83109/bulk-delete-for-large-table-in-mysql
+(https://dba.stackexchange.com/questions/83109/bulk-delete-for-large-table-in-mysql)
