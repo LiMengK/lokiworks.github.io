@@ -40,3 +40,6 @@ DROP TABLE NOTIFICATION_OLD;
 * The remaining 30 days are added back into NOTIFICATION while new INSERTs can take place.
 * Dropping the old version of NOTIFICATION does not interfere with new INSERTs
 * NOTE : I have recommended doing bait-and-switch for table DELETEs before : (See my July 19, 2012 post : Optimizing DELETE Query on MySQL MEMORY Table)
+
+## reference
+https://dba.stackexchange.com/questions/83109/bulk-delete-for-large-table-in-mysql
