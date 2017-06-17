@@ -27,4 +27,8 @@ set args arg1 arg2 arg3
 ```
 s
 ```
+* 可视化调试
+```
+gdb -tui -q
+```
 
