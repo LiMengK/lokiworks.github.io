@@ -25,3 +25,7 @@ nmap baidu.com -p 80
 ```
 nc -w 5  baidu.com 80 && echo ok
 ```
+## 检测本地端口
+```
+netstat -ntl | awk '{print $4}' | grep ":80$"
+```
