@@ -12,7 +12,7 @@ published: true
 {% include JB/setup %}
 
 # keepalived的主备切换
-互联网行业一般不允许有单点的系统，至少得是主备的。通常会用keepalived来做ip漂移。下面讲讲如何配置keepalived的主备模式。
+互联网行业一般不允许有单点的系统，至少得是主备的。通常会用keepalived来做ip的漂移。下面讲讲如何配置keepalived的主备模式。
 
 ## 实验环境
 ```
