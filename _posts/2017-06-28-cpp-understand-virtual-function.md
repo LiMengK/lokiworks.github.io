@@ -13,7 +13,7 @@ published: true
 
 # 理解c++中虚函数的两个例子
 
-## 例子1
+## 例1
 ```
 #include<iostream>
 using namespace std;
@@ -45,7 +45,7 @@ int main()
 	return 0;
 }
 ``` 
-## 例子2
+## 例2
 ```
 #include<iostream>
 #include  <stdint.h>
