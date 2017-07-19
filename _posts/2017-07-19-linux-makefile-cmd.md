@@ -22,3 +22,8 @@ all: library.cpp main.cpp
 * $@ evaluates to all
 * $< evaluates to library.cpp
 * $^ evaluates to library.cpp main.cpp
+
+
+
+## 参考
+[GNU Make manual](https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html#Automatic-Variables)
