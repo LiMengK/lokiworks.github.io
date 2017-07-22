@@ -151,12 +151,10 @@ int main() {
   QUEUE_INSERT_TAIL(&queue, &user1.node);
   QUEUE_INSERT_TAIL(&queue, &user2.node);
 
-  QUEUE *q = QUEUE_HEAD(&queue);
-
-  User *pUser = QUEUE_DATA(q, User, node);
+  QUEUE *q = NULL;
 
   QUEUE_FOREACH(q, &queue) {
-    pUser = QUEUE_DATA(q, User, node);
+    User *pUser = QUEUE_DATA(q, User, node);
 
     printf("Received rest inserted users: %s who is %d.\n", pUser->name,
            pUser->age);
@@ -164,6 +162,7 @@ int main() {
 
   return 0;
 }
+
 
 ```
 
