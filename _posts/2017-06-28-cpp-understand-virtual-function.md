@@ -4,7 +4,7 @@ title: 理解c++中虚函数的两个例子
 keywords:
   - cpp
 description: 
-category: cpp
+category: c/c++
 tags:
   - 虚函数
 published: true
