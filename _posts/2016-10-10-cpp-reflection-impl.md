@@ -5,9 +5,9 @@ keywords:
   - 反射
 
 description: C++中的反射
-category: Lang
+category: c/c++
 tags:
-  - Framework
+  - reflection
 published: true
 ---
 {% include JB/setup %}

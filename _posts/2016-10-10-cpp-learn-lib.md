@@ -6,9 +6,9 @@ keywords:
   - 框架
 
 description: 库
-category: Lang
+category: c/c++
 tags:
-  - Framework
+  - library
 published: true
 ---
 {% include JB/setup %}

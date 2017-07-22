@@ -4,7 +4,7 @@ title: The Cpp lands
 keywords:
   - Cpp
 description: The Cpp lands
-category: Cpp
+category: c/c++
 tags:
   - Cpp
 published: true
