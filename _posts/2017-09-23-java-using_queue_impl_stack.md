@@ -54,7 +54,7 @@ public class IntStack {
 
 ```
 
-**Operator.java**
+**QueueStack.java**
 ```java
 package queueStack;
 
