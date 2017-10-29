@@ -30,4 +30,4 @@ mcontext_t uc_mcontext;保存context使用的机器指令
 }ucontext_t;
 ```
 
-通过上述API，可以实现一个简单的协程库。详细实现参见云风的coroutine库:[linked phrase(https://github.com/cloudwu/coroutine)
+通过上述API，可以实现一个简单的协程库。详细实现参见[云风的coroutine库](https://github.com/cloudwu/coroutine)
